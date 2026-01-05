@@ -28,8 +28,35 @@ Help users:
 - Auth: Local / device-based
 - Art: Pixel Art
 
-## 🚀 Status
-Early development / concept phase.
+## 🚀 Setup Instructions
+
+1. **Create a New Xcode Project**:
+   - Open Xcode > File > New > Project.
+   - Choose **iOS App**.
+   - Name it `BetterDose`.
+   - Interface: **SwiftUI**.
+   - Language: **Swift**.
+
+2. **Import Files**:
+   - Move the generated `Sources` folder contents into your new Xcode project folder (replace the default `ContentView.swift` and `BetterDoseApp.swift`).
+   - Drag the `Models`, `Views`, `ViewModels`, `Services`, and `Utils` folders into the Xcode Project Navigator.
+   - Ensure "Copy items if needed" is checked.
+
+3. **Assets**:
+   - The code uses system icons (SF Symbols) so it runs immediately.
+   - For the full experience, add pixel art images to `Assets.xcassets` and update `GameModels.swift` and `CharacterView.swift` to use them.
+
+## 🛠 Tech Stack
+- **iOS**: SwiftUI (MVVM Architecture)
+- **Persistence**: UserDefaults (Offline-first)
+- **Gamification**: Custom GameEngine (XP, Levels, Inventory)
+
+## 📁 Project Structure
+- `Models/`: Data structures (Character, Habits, Words).
+- `Views/`: SwiftUI Views (Dashboard, EnglishGame, etc.).
+- `ViewModels/`: Business logic and state management.
+- `Services/`: Game logic and persistence layers.
+- `Utils/`: Constants and Theme configuration.
 
 ---
-Built by ahmedovic
+Built by ahmedovic & Antigravity
